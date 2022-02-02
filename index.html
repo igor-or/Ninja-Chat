@@ -13,7 +13,6 @@
 		<title>Ninja Chat</title>
 	</head>
 	<body>
-        
 		<!-- container & title -->
 		<div class="container my-4">
 			<h1 class="my-4 text-center">Ninja Chat</h1>
@@ -55,6 +54,24 @@
 				<div class="update-mssg"></div>
 			</form>
 		</div>
+
+		<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: 'AIzaSyDKFDIt7UfzyAlbrmR-I3ckMM4A5R243_E',
+				authDomain: 'ninja-chat-ea69b.firebaseapp.com',
+				projectId: 'ninja-chat-ea69b',
+				storageBucket: 'ninja-chat-ea69b.appspot.com',
+				messagingSenderId: '775679276919',
+				appId: '1:775679276919:web:3ac006e36fdb23d1b49372',
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+		</script>
 
 		<script src="scripts/chat.js"></script>
 		<script src="scripts/ui.js"></script>
